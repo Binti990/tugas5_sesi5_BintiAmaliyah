@@ -1,0 +1,108 @@
+"tugas 2"
+[Test Plan] Fitur Jual Beli Dengan Website
+
+Status Dokumen	[DRAFT]
+Test Plan Creator	Lia
+Test Plan Reviewr	●Senior QA
+●Lead QA
+●Manager QA 
+●Product Owner
+1.Pendahuluan
+a.Gambaran umum fitur yang akan diuji
+
+Rencana uji ini dibuat untuk mengkomunikasikan penjadwalan pengujian oleh anggota tim yang terlibat. Rencana uji mencakup beberapa hal diantaranya tujuan, penggambaran fitur produk yang akan diuji, dan jadwal pengujian. Rencana uji ini dibuat untuk memastikan fitur pada situs web saucedemo.com berjalan dengan baik sesuai dengan kebutuhan pengguna. 
+
+b.Tujuan dan Sasaran
+
+Situs web saucedemo.com adalah situs web pemodelan e-commerce yang dikembangkan oleh Sauce Lab, yang dirancang dengan tujuan untuk membantu pengembang dan penguji dalam melakukan pengujian. Dalam situs web ini, terdapat fitur login, daftar produk, keranjang belanja, pembayaran, dan logout. Tahapan pengujian dilakukan dengan pengujian manual, yang terdiri dari : 
+1)Pengujian fitur LogIn bertujuan untuk memastikan pengguna berhasil tanpa ada kendala dalam melakukan proses login ke halaman web tersebut. Skenario pengujian dengan ketentuan :
+Username dan password valid
+Username dan password tidak valid
+2)Pengujian fitur Sort bertujuan untuk memastikan pengguna dapat melakukan pencarian produk sesuai keinginan pengguna. Skenario pengujian dengan ketentuan :
+Nama produk dari A-Z
+Nama produk dari Z-A
+Harga produk dari murah ke mahal
+Harga produk dari mahal ke murah
+3)Pengujian fitur LogOut
+
+2.Test Item
+List test item (fitur / produk) 
+
+No	Fitur	Test Item
+#1	Login	1.Login dengan username dan password valid  (credentials)
+2.Login username tidak sesuai dengan ketentuan dan password valid (uncredentials)
+3.Login username valid dan password tidak sesuai ketentuan (uncredentials)
+4.Login tidak ada username dan ada password valid (uncredentials)
+5.Login ada username valid dan tidak ada password (uncredentials)
+6.Login tidak ada username dan password
+7.Login dengan username dan password invalid
+#2	Sort	1.Pencarian nama produk dari A-Z (credentials)
+2.Pencarian nama produk dari Z-A (credentials)
+3.Pencarian harga produk dari murah ke mahal (credentials)
+4.Pencarian harga produk dari mahal ke murah (credentials)
+#3	Logout	1.LogOut
+
+3.Pengujian dalam Cakupan
+List fitur yang diuji.
+
+No	Fitur	Requirement / Design specifications
+#1	Login	1.Login dengan username dan password valid  
+
+2.Login username tidak sesuai dengan ketentuan dan password valid 
+
+3.Login username valid dan password tidak sesuai ketentuan 
+
+4.Login tidak ada username dan ada password valid 
+
+5.Login ada username valid dan tidak ada password 
+
+6.Login tidak ada username dan password
+
+
+7.Login dengan Username dan Password invalid
+
+#2	Sort	1.Pencarian nama produk dari A-Z (kiri ke kanan)
+
+2.Pencarian nama produk dari Z-A (kiri ke kanan)
+
+3.Pencarian produk dari harga murah ke mahal (kiri ke kanan)
+
+4.Pencarian produk dari harga mahal ke murah (kiri ke kanan)
+
+
+4.Pengujian Diluar Cakupan
+List fitur perangkat lunak atau produk yang tidak akan diuji.
+
+No	Fitur	Alasan
+#1	Register	Situs web ini tidak ada fitur register, dan hanya berfokus pada fitur login
+#2	Pembatalan pesanan	Situs web ini tidak ada fitur pembatalan pesanan dan hanya fokus pada pemesanan produk
+#3	Search	Tidak ada tempat pencarian nama produk yang diketik, karena berfokus pada ketentuan pengurutan nama dan harga yang sudah ditentukan
+
+5.Pendekatan Pengujian
+Ringkasan pendekatan pengujian yang akan diterapkan selama proses pengujian.
+
+Pengujian ini menggunakan jenis pengujian eksploratif, dikarenakan penguji tidak mengetahui proses pembuatan situs web saucedemo.com. Sehingga pengujian ini dilakukan dengan menjelajahi dan mengecek fitur yang ada pada situs web ini dapat digunakan sesuai dengan kebutuhan pengguna dengan baik tanpa ada kendala masalah didalamnya.
+6.Lingkup Pengujian
+Informasi mengenai lingkup pengujian yang dapat digunakan selama fase pengujian :
+●Website : https://www.saucedemo.com/ 
+●Android version : Android 9.0 dengan One UI 1.1 
+●Laptop version : Windows 10 pro
+
+7.Test Deliverables
+a.Test Plan (this document itself): [link]
+b.Test Case: https://docs.google.com/spreadsheets/d/1x6fJseokAKMmR7VZEyQ_X1ZoJXidQoQr1qA3yi1rwjw/edit?usp=sharing 
+c.Test Script (if any): [link]
+d.Test data (if any): [link]
+e.Defect Report: https://docs.google.com/spreadsheets/d/1x6fJseokAKMmR7VZEyQ_X1ZoJXidQoQr1qA3yi1rwjw/edit?usp=sharing 
+f.Test Report: [link]
+
+8.Jadwal Pengujian
+No	Tugas	Waktu Perkiraan	Waktu Sebenarnya
+		Tanggal Mulai	Tanggal Selesai	Tanggal Mulai	Tanggal Selesai
+#1	Develop Test Planning	6 Juni 2025	6 Juni 2025	6 Juni 2025	6 Juni 2025
+#2	Develop Test Case	7 Juni 2025	7 Juni 2025	7 Juni 2025	7 Juni 2025
+#3	Test Case Review	8 Juni 2025	8 Juni 2025	8 Juni 2025	8 Juni 2025
+
+9.Referensi
+List of related documents e.g PRD, Figma design, API Contract, Copy document etc
+
